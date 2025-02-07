@@ -11,3 +11,5 @@ hello-jci.o: hello-jci.c
 
 clean:
 	rm -rf *.o hello-jci
+install: 
+        cp hello-jci /usr/local/
