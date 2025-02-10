@@ -15,5 +15,5 @@ clean:
 
 install:
 	chmod 777 hello-jci
-	cp hello-jci /usr/local/bin/hello-jci
+	install hello-jci $(DESTDIR)
 
