@@ -1,18 +1,1 @@
-name: hello-jci 
-base: core22
-version: '2.10'
-summary: GNU Hello, the "hello world" snap
-description: |
-  GNU hello prints a friendly greeting.
-grade: stable
-confinement: devmode
 
-parts:
-  hello-jci:
-    plugin: autotools
-    autotools-configure-parameters: ["--prefix=/usr"]
-    source: https://github.com/swati-tarun-tiwari/hello-jci.git
-
-apps:
-  hello-jci:
-    command: usr/bin/hello-jci
