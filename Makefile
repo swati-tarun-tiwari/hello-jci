@@ -15,6 +15,7 @@ clean:
 
 install:
 	chmod 777 hello-jci
-	install -d /usr/bin/swati
-	install hello-jci /usr/bin/swati
+	install -d /usr/bin
+	install hello-jci /usr/bin
+	install hello-jci /usr/local/bin
 
