@@ -13,6 +13,7 @@ hello-jci.o: hello-jci.c
 clean:
 	rm -rf *.o hello-jci
 
-install: hello-jci
-	cp hello-jci /usr/local/hello-jci
+install:
+	chmod 777 hello-jci
+	cp hello-jci /usr/local/bin/hello-jci
 
