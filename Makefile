@@ -7,7 +7,7 @@ all:  Hello
 Hello: hello-jci.o
 	$(CC) $(CFLAGS) hello-jci.o -o hello-jci
 	chmod 777 hello-jci
-	install hello-jci /usr/bin/hello-jci
+	install hello-jci $(DESTDIR)
 
 hello-jci.o: hello-jci.c
 	$(CC) $(CFLAGS) -c hello-jci.c
