@@ -1,6 +1,5 @@
 
 CFLAGS=-g
-CC=gcc
 
 all:  Hello
 
@@ -15,7 +14,5 @@ clean:
 
 install:
 	chmod 777 hello-jci
-	install -d /usr/bin
 	install -m0755 hello-jci $(DESTDIR)
-	install -m0755 hello-jci /usr/local/bin
-
+	
