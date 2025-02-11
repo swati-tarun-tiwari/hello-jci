@@ -1,6 +1,5 @@
 
 CFLAGS=-g
-CC=aarch64-linux-gnu-gcc
 
 all:  Hello
 
