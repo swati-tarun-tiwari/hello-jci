@@ -1,6 +1,6 @@
-AC_INIT([hello-jci])
-AM_INIT_AUTOMAKE([foreign subdir-objects])
+AC_INIT(hello-jci, 1.0.51, voss@seehuhn.de)
 
-AC_PROG_CC
-
-AC_OUTPUT(Makefile)
+AM_INIT_AUTOMAKE
+AC_CANONICAL_HOST
+AC_CONFIG_FILES([Makefile])
+AC_OUTPUT
